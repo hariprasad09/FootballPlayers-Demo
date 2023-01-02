@@ -1,0 +1,11 @@
+.nav-link {
+    font-size: large; 
+  }
+
+a:hover {
+    text-decoration: none;
+  }  
+
+.navbar-brand{
+    margin: 15px;
+}  
