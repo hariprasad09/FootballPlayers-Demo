@@ -1,0 +1,9 @@
+.playerRating{
+    font-size: 12px;
+}
+
+ngb-rating{
+    color: rgb(116, 116, 0);
+    font-size: 30px;
+}
+

@@ -1,0 +1,70 @@
+<div class="card">
+    <div class="card-header">
+        {{pageTitle}}
+        <!-- <nav class="navbar navbar-light bg-light justify-content-between">
+            <form class="form-inline justify-content-end">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav> -->
+    </div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filter:</div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]='filterText' >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Your filtered seach : {{filterText}} </h6>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf="players.length">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="btn btn-primary" (click)="hideImageFunction()">
+                                {{showImage ? "Hide": "Show"}} Image
+                            </button>
+                        </th>
+                        <th>Player Name</th>
+                        <th>Date of Birth</th>
+                        <th>Country</th>
+                        <th>Club</th>
+                        <th>Player Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let player of playerFilter">
+                        <td>
+                            <img class="rounded float-right" *ngIf="showImage"
+                                 [src]="player.imageUrl"
+                                 [title]="player.playerName"
+                                 [style.width.px]="imageWidth"
+                                 [style.margin.px]="imageMargin">
+                        </td>
+                        <td>
+                            <a [routerLink]="['/player/player-detail', player.playerId]">
+                                <!-- to make player name as a link which redirects to player list,
+                                     follow abv syntax -->
+                                {{ player.playerName}}
+                            </a>
+                        </td>
+                        <td>{{ player.dateOfBirth}}</td>
+                        <td>{{ player.playerCountry}}</td>
+                        <td>{{ player.playerClub}}</td>
+                        <td>
+                            <app-player-rating></app-player-rating>
+                            <!-- {{ player.playerRating}} -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

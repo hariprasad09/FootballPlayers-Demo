@@ -1,0 +1,22 @@
+[
+    {
+        "playerId": 1,
+        "playerName": "Lionel Messi",
+        "playerCountry": "Argentina",
+        "playerClub": "PSG",
+        "dateOfBirth": "24-June-1987",
+        "description": "Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who received a record-setting seven Ballon d’Or awards as the world’s top male player (2009–12, 2015, 2019, and 2021). In 2022 he helped Argentina win the Fédération Internationale de Football Association (FIFA)’s World Cup.",
+        "playerRating": null,
+        "imageUrl": "assets/images/leoMessi.png"
+    },
+   {
+        "playerId": 2,
+        "playerName": "Cristiano Ronaldo",
+        "playerCountry": "Portugal",
+        "playerClub": "Al-Nassr FC ",
+        "dateOfBirth": "5-February-1985",
+        "description": "Cristiano Ronaldo is a well-known football player who is associated with the sport. He was born into a socially deprived household and began playing football at an early age. At 18, he was chosen for the international football squad. Cristiano Ronaldo has become the most famous footballer in the world in a very short period.",
+        "playerRating": null,
+        "imageUrl": "assets/images/ronaldo.png"
+    }
+]
